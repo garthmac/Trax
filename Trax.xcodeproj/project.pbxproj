@@ -80,8 +80,6 @@
 				88A32A531AF40D350092A561 /* AppDelegate.swift */,
 				88A32A551AF40D350092A561 /* ViewController.swift */,
 				88A32A571AF40D350092A561 /* Main.storyboard */,
-				88A32A5A1AF40D350092A561 /* Images.xcassets */,
-				88A32A5C1AF40D350092A561 /* LaunchScreen.xib */,
 				88A32A511AF40D340092A561 /* Supporting Files */,
 			);
 			path = Trax;
@@ -90,6 +88,8 @@
 		88A32A511AF40D340092A561 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				88A32A5A1AF40D350092A561 /* Images.xcassets */,
+				88A32A5C1AF40D350092A561 /* LaunchScreen.xib */,
 				88A32A521AF40D350092A561 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +161,7 @@
 				TargetAttributes = {
 					88A32A4D1AF40D340092A561 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7P9362E76E;
 					};
 					88A32A621AF40D350092A561 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -342,9 +343,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Trax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +356,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Trax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +418,7 @@
 				88A32A6F1AF40D350092A561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88A32A701AF40D350092A561 /* Build configuration list for PBXNativeTarget "TraxTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +427,7 @@
 				88A32A721AF40D350092A561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
